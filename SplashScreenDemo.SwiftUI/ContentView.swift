@@ -5,17 +5,29 @@
 //  Created by Marcelo Mogrovejo on 04/05/2025.
 //
 
+// Source: https://www.youtube.com/watch?v=0ytO3wCRKZU
+
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        ZStack {
+            Color(.blue)
+
+            VStack {
+                Image(systemName: "globe")
+                    .font(.system(size: 80))
+                    .imageScale(.large)
+                    .foregroundStyle(.white)
+
+                Text("ContentView")
+                    .font(.system(size: 32))
+                    .foregroundStyle(.white)
+                
+            }
+            .padding()
         }
-        .padding()
+        .ignoresSafeArea(.all)
     }
 }
 
